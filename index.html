@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reesce's Penis - The Ultimate Candy Experience</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3D141B;
+            color: #FEF301;
+        }
+        header {
+            background-color: #F94D06;
+            padding: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3D141B;
+            padding: 1rem;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+        nav a {
+            color: #FEF301;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #F94D06;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #F94D06;
+            animation: slideIn 2s ease-in-out;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .product {
+            background-color: #FEF301;
+            color: #3D141B;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+        .product h2 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        .product p {
+            font-size: 1rem;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #F94D06;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #3D141B;
+            color: #FEF301;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .popup button {
+            background-color: #F94D06;
+            color: #FEF301;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+        .popup button:hover {
+            background-color: #FEF301;
+            color: #3D141B;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+<header><img src="https://pbs.twimg.com/media/GWynlQfW8AAExPr?format=png&name=900x900" width="200px"></header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="javascript:void(0)" onclick="showPopup()">Contact Us!</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to Reesce's Penis</h1>
+    <p>The ultimate candy experience awaits you!</p>
+</div>
+
+<section id="products">
+    <div class="products">
+        <div class="product">
+            <img src="https://pbs.twimg.com/media/GWyntMrWYAAX-x7?format=png&name=900x900" alt="Product 1">
+            <h2>Original</h2>
+            <p>The good old reliable Original flavour, whether it's for a quickie or a mouth-filling delectable snack, our Original flavour covers it all.</p>
+        </div>
+        <div class="product">
+            <img src="https://pbs.twimg.com/media/GWynlQgXQAAdlQh?format=png&name=900x900" alt="Product 2">
+            <h2>BBC (Big Black Chocolate)</h2>
+            <p>The Big One for the ones who love hardcore. Enough to fill your whole mouth with one single bite, enough to fill you up.</p>
+        </div>
+        <div class="product">
+            <img src="https://pbs.twimg.com/media/GWynlQfWoAEZqyf?format=png&name=900x900" alt="Product 3">
+            <h2>Mini Bites</h2>
+            <p>Your Wife will leave you because you just don't have enough. The world is unfair.</p>
+        </div>
+        <div class="product">
+            <img src="https://pbs.twimg.com/media/GWynlQgXAAAMOtu?format=png&name=900x900" alt="Product 4">
+            <h2>Creamy White</h2>
+            <p>The slimy, lightly salted viscous white liquid covered in chocolate can send you to heaven and back with its magical powers.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Reesce's Penis.<br>All rights revoked.<br>This is entirely made by raz and any asshole who tries to rip it off, I will find you and rip your limbs off one by one.
+</footer>
+
+<div class="popup-overlay" onclick="hidePopup()"></div>
+<div class="popup" id="popup">
+    <p>Contact us at: <strong><b>reescespenis.support@proton.me</b></strong></p>
+    <button onclick="hidePopup()">Close</button>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+        document.querySelector('.popup-overlay').style.display = 'block';
+    }
+
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
+        document.querySelector('.popup-overlay').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
